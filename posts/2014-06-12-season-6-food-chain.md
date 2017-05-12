@@ -2,7 +2,7 @@
 categories: season6 episodes
 date: 2014-06-12T10:33:56.000Z
 title: Foo Chain (Season 6)
-banner: /assets/australia.jpg
+banner: /assets/coliseum_of_rome_italy.jpg
 shortdesc: Finn and Jake learn about the food chain by becoming the food chain.
 ---
 The episode begins with candy children that have bodies resembling different shapes sliding down a slide, shouting with excitement. The kids are viewed from an horizontal angle in the next scene as they go through a playground-like structure.<!--more--> Finn and Jake are examining the 'Catapilla Family'. After watching Princess Bubblegum teach the children about the Food Chain, they head to the snack bar as Finn found Princess Bubblegum's class useless.
@@ -22,5 +22,6 @@ The scene changes into a leaf with a group of caterpillars with Jake hosting the
 Back into the reality, Finn realizes the lesson of the Food Chain and sings "[Food Chain](http://adventuretime.wikia.com/wiki/Food_Chain_(song))", which PB soon joins singing with him.
 
 The end shows Finn transforming into a bird-caterpillar-plant-bacteria hybrid while the kids leave due to boredom, once again entering the slide seen in the beginning.
+
 
 
