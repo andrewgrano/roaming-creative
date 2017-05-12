@@ -3,7 +3,6 @@ backend:
   url: http://localhost:8080
 
 production:
-  CMS_ENV: production
   backend:
     name: github-api
     repo: andrewgrano/roaming-creative # Path to your Github repository
