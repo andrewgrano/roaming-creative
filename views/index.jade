@@ -1,38 +1,228 @@
 extends layout
 
 block content
-  .row
-    .12u
-      section
-        header.major
-          h2 Characters
-                  
-        .row
-          - each character in records.characters.data
-            .4u
-              .box
-                span.image.featured
-                  img(src=character.image)
-                header
-                  h3= character.name
-                  p= character.description
+  main.index
+        .header
+            .row
+                .container
+                    h1 Roaming Love <span> Media Kit</span>
 
-    .row
-      .12u
-        section
-          header.major
-            h2 Recent Episodes
-          div.row
-            each post in posts.sort('date', 'desc').slice(0,2)
-              .6u
-                section.box
-                  a.image.featured(href=post.permalink)
-                    img(src= post.banner)
-                  header
-                    h3= post.title
-                    p= "Posted " + dateFormat(post.date, 'LL')
-                    != postExcerpt(post.body, 250)
-                  footer
-                    ul.actions
-                      li
-                        a.button.icon.fa-file-text(href= post.permalink) Continue Reading
+        .indexPinkMtn
+            .sun
+
+        .indexIntro
+            h1
+                .container We are <span class="gold">Sigournee</span> and <span class="gold">Andrew Grano</span>, a married couple from Los Angeles, California.<br> We created an online travel community called  <span class="gold">RoamingLove.com</span>
+            .indexIntro__mtn2
+                img(src="/img/medblue-top-bg.svg")
+            h2
+
+                .container <span class="gold">Roaming Love</span> is for travel enthusiasts, photgraphers and storytellers.<br>  We allow contributors from around the world to submit their <span class="peach">travel stories</span> and <span class="peach">photos</span> for publication on our website.<br>   We also foster our community through <span class="peach">Instagram</span> and <span class="peach">Email</span>.
+            .indexIntro__mtn3
+                img(src="/img/medblue-bottom-bg.svg")
+
+        section.indexStats
+            .container
+                .statbox
+                    .statbox__title Monthly Page Views
+                    hr
+                    .statbox__number 6,000
+
+                .statbox
+                    .statbox__title Unique Visitors Per Month
+                    hr
+                    .statbox__number 2,000
+
+                .statbox
+                    .statbox__title Email Subscribers
+                    hr
+                    .statbox__number 800
+
+                .statbox
+                    .statbox__title Instagram Followers
+                    hr
+                    .statbox__number 1,300
+
+                .statbox
+                    .statbox__title Contributors / Articles
+                    hr
+                    .statbox__number 140 / 215
+
+        section.indexServices
+            .container
+                h3.sectionHeader Our Services
+                //- p.indexServices__desc As Sigournee and Andrew travel the world, we hope to offer our services to hotels, hostels, tour companies, and other travel-related businesses that we meet.  We can help market your business in two ways:  by sharing your story with the Roaming Love community and by creating new media for you.
+
+                .row
+                    .col-sm-6.col-sm-offset-3
+
+                        .servicebox.servicebox--collaborate
+                            .clearfix
+                                figure.servicebox__img
+                                    img(src="/img/icon-collaborate.svg")
+                                    figcaption
+                                        h4.servicebox__title Collaboration with<br> RoamingLove.com
+                            p.servicebox__desc We can write an article which will be featured on the homepage of Roaming Love, along with an instagram shoutout and a mention in our email newsletter.
+                .row
+                    .col-sm-4
+                        .servicebox
+                            figure.servicebox__img
+                                img(src="/img/icon-camera.svg")
+                                figcaption
+                                    h4.servicebox__title Profesional<br> Photography
+                            p.servicebox__desc We can take professional photographs of everything that your business has to offer. The high-resolution photos will belong to you.
+                    .col-sm-4
+                        .servicebox
+                            figure.servicebox__img
+                                img(src="/img/icon-video.svg")
+                                figcaption
+                                        h4.servicebox__title Video Shooting<br> & Editing
+                            p.servicebox__desc We can shoot and edit a short marketing video, highlighting the most eye-catching experiences that your customers can enjoy.
+                    .col-sm-4
+                        .servicebox
+                            figure.servicebox__img
+                                img(src="/img/icon-web.svg")
+                                figcaption
+                                    h4.servicebox__title Web Design &<br> Development
+                            p.servicebox__desc We can create a simple, mobile-friendly website for your business. When it’s done, you can  easily edit the text & images anytime you want.
+
+        section.indexPortfolio
+            .container
+                h3.sectionHeader Our Past Work
+
+                .row.portfolioItem
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/the-saguaro-palm-springs?rel=media-kit" target="rl-saguaro")
+                            img(class=" img-responsive" src="/img/work/sag-a.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/the-saguaro-palm-springs?rel=media-kit" target="rl-saguaro")
+                            img(class="img-responsive" src="/img/work/sag-b.jpg")
+                    .col-sm-3.vcenter
+                        .portfolioItem__desc We collaborated with <b>The Suguaro Hotel</b> located in beautiful Palm Springs, California. We truly enjoyed taking photos of this bright and colorful hotel and pool while relaxing under the sun.
+                        a.portfolioItem__cta(href="https://www.roaminglove.com/post/the-saguaro-palm-springs?rel=media-kit" target="rl-saguaro") Read our Full Write-Up <span class="gold">Here</span>.
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/the-saguaro-palm-springs?rel=media-kit" target="rl-saguaro")
+                            img(class="img-responsive" src="/img/work/sag-c.jpg")
+
+                .row.portfolioItem
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/warner-bros-studio-tour-in-burbank?rel=media-kit" target="rl-wb")
+                            img(class=" img-responsive" src="/img/work/wb-a.jpg")
+                    .col-sm-3.vcenter
+                        .portfolioItem__desc Working with the <b>Warner Brothers Studio Lot Tour</b>, we wrote a full review with photos of their wonderful tour.
+                        a.portfolioItem__cta(href="https://www.roaminglove.com/post/warner-bros-studio-tour-in-burbank?rel=media-kit" target="rl-wb") Read our Full Review <span class="gold">Here</span>.
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/warner-bros-studio-tour-in-burbank?rel=media-kit" target="rl-wb")
+                            img(class="img-responsive" src="/img/work/wb-b.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/warner-bros-studio-tour-in-burbank?rel=media-kit" target="rl-wb")
+                            img(class="img-responsive" src="/img/work/wb-c.jpg")
+
+                .row.portfolioItem
+                    .col-sm-3.vcenter
+                        .portfolioItem__desc We photographed this beautiful <b>cabin getaway in Lake Arrowhead</b>, California.  We enjoyed a 2-night stay in exchange for photos and review on Roaming Love.
+                        a.portfolioItem__cta(href="https://www.roaminglove.com/post/the-perfect-cabin-in-the-woods-in-lake-arrowhead?rel=media-kit") Read our Full Review <span class="gold">Here</span>.
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/the-perfect-cabin-in-the-woods-in-lake-arrowhead?rel=media-kit" target="rl-arrowhead")
+                            img(class=" img-responsive" src="/img/work/arrowhead-a.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/the-perfect-cabin-in-the-woods-in-lake-arrowhead?rel=media-kit" target="rl-arrowhead")
+                            img(class="img-responsive" src="/img/work/arrowhead-b.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/the-perfect-cabin-in-the-woods-in-lake-arrowhead?rel=media-kit" target="rl-arrowhead")
+                            img(class="img-responsive" src="/img/work/arrowhead-c.jpg")
+
+
+                .row.portfolioItem
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/gitana-del-mar-boutique-beach-resort?rel=media-kit" target="rl-gitana")
+                            img(class=" img-responsive" src="/img/work/gitana-a.jpg")
+                    .col-sm-3.vcenter
+                        .portfolioItem__desc Gitana Del Mar <b>Botique Beach Resort</b> in Colombia was truly one-of-a-kind. We stayed here during our Honeymoon and were inspired to photograph the area.
+                        a.portfolioItem__cta(href="https://www.roaminglove.com/post/gitana-del-mar-boutique-beach-resort?rel=media-kit" target="rl-gitana") See More <span class="gold">Here</span>.
+
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/gitana-del-mar-boutique-beach-resort?rel=media-kit" target="rl-gitana")
+                            img(class="img-responsive" src="/img/work/gitana-b.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/gitana-del-mar-boutique-beach-resort?rel=media-kit" target="rl-gitana")
+                            img(class="img-responsive" src="/img/work/gitana-c.jpg")
+
+                .row.portfolioItem
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/afternoon-tea-at-the-langham-huntington?rel=media-kit" target="rl-langham")
+                            img(class=" img-responsive" src="/img/work/langham-a.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/afternoon-tea-at-the-langham-huntington?rel=media-kit" target="rl-langham")
+                            img(class="img-responsive" src="/img/work/langham-b.jpg")
+                    .col-sm-3.vcenter
+                        .portfolioItem__desc The Langham Hotel in Pasadena, California hosted us for their famous High Tea.
+                        a.portfolioItem__cta(href="https://www.roaminglove.com/post/afternoon-tea-at-the-langham-huntington?rel=media-kit" target="rl-langham") Read Our Review <span class="gold">Here</span>.
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/afternoon-tea-at-the-langham-huntington?rel=media-kit" target="rl-langham")
+                            img(class="img-responsive" src="/img/work/langham-c.jpg")
+                .row.portfolioItem
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/villa-maria-tayrona?rel=media-kit" target="rl-tayrnoa")
+                            img(class=" img-responsive" src="/img/work/tayrona-a.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/villa-maria-tayrona?rel=media-kit" target="rl-tayrnoa")
+                            img(class="img-responsive" src="/img/work/tayrona-b.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/villa-maria-tayrona?rel=media-kit" target="rl-tayrnoa")
+                            img(class="img-responsive" src="/img/work/tayrona-c.jpg")
+                    .col-sm-3.vcenter
+                        .portfolioItem__desc Villa Maria Tayrona is a hotel on the beach in Colombia.
+                        a.portfolioItem__cta(href="https://www.roaminglove.com/post/villa-maria-tayrona?rel=media-kit" target="rl-tayrnoa") See More  <span class="gold">Here</span>.
+                .row.portfolioItem
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/renaissance-pleasure-faire?rel=media-kit" target="rl-ren")
+                            img(class=" img-responsive" src="/img/work/ren-a.jpg")
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/renaissance-pleasure-faire?rel=media-kit" target="rl-ren")
+                            img(class="img-responsive" src="/img/work/ren-b.jpg")
+                    .col-sm-3.vcenter
+                        .portfolioItem__desc The Renassiance Pleasure Faire was an incredible experience! There was something to photograph everywhere!
+                        a.portfolioItem__cta(href="https://www.roaminglove.com/post/renaissance-pleasure-faire?rel=media-kit" target="rl-ren") See More  <span class="gold">Here</span>.
+                    .col-sm-3.vcenter
+                        a.portfolioItem__img(href="https://www.roaminglove.com/post/renaissance-pleasure-faire?rel=media-kit" target="rl-ren")
+                            img(class="img-responsive" src="/img/work/ren-c.jpg")
+
+
+
+
+
+        section.indexAbout
+            .container
+                h3.sectionHeader About Us
+                .row
+                    .col-sm-6
+                        figure.aboutItem
+                            img(class="img-responsive center-block" src="/img/sigournee.jpg")
+                            figcaption
+                                .aboutItem__name Sigournee Grano
+                                .aboutItem__desc is a <strong>photographer</strong> and writer with a degree in <strong>photojournalism</strong>.
+                      .col-sm-6
+                        figure.aboutItem
+                            img(class="img-responsive center-block" src="/img/andrew.jpg")
+                            figcaption
+                                .aboutItem__name Andrew Grano
+                                .aboutItem__desc has over 4 years experience as a professional <strong>web developer</strong>.  He has a degree in <strong>Multimedia</strong>.
+                .row.indexAbout__more
+                    .col-sm-4
+                         img(class="img-responsive center-block" src="/img/both-a.jpg")
+                    .col-sm-4
+                         img(class="img-responsive center-block" src="/img/both-b.jpg")
+                    .col-sm-4
+                         img(class="img-responsive center-block" src="/img/both-c.jpg")
+                    p We have been married for over a year, after dating since age 16! Together, we have traveled to South America, Mexico, South East Asia, and around the U.S. and Europe. We hope that our skills (along with our growing community) will enable us to travel long-term.
+
+        .footer
+            .footer__mtn
+                img(src="/img/medblue-top-bg.svg")
+
+            .container
+              .footer__heading We would love to help <span class="peach">market</span> your business, <span class="peach">see</span> your part of the world, and <span class="peach">meet</span> you!
+              .footer__subheading Please reach out to us today!
+              .footer__email
+                a(href="mailto:roaminglovetravel@gmail.com") roaminglovetravel@gmail.com

@@ -1,0 +1,66 @@
+.footer {
+    padding: 0 0 100px 0;
+    background: $blue-med;
+    color: $white;
+    text-align: center;
+    position: relative;
+
+    &__mtn {
+        background: $blue-dark;
+        margin-top: -1px;
+        margin-bottom: -1px;
+
+        img {
+            display: block;
+            width: 102%;
+            margin-left: -2%;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    &__heading {
+        font-family: $displayFont;
+        font-size: 36px;
+        margin: 0 auto 35px;
+        max-width: 660px;
+    }
+
+    &__subheading {
+        font-size: 24px;
+        margin-bottom: 75px;
+    }
+
+    &__email {
+        a {
+            color: $white;
+            font-family: $displayFont;
+            font-size: 36px;
+            position: relative;
+            padding: 15px 0 20px;
+
+            &:before {
+                content: " ";
+                height: 6px;
+                width: 80%;
+                background: $gold;
+                position: absolute;
+                top: 0;
+                left: 10%;
+            }
+
+            &:after {
+                content: " ";
+                height: 6px;
+                width: 80%;
+                background: $gold;
+                position: absolute;
+                bottom: 0;
+                left: 10%;
+            }
+
+        }
+    }
+
+}
+

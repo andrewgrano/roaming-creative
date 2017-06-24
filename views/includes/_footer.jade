@@ -1,32 +1,6 @@
-#footer-wrapper
-  section#footer.container
-    .row
-      .8u
-        section
-          header
-            h2 More Episodes
-          ul.dates
-            each post in posts.orderBy('date','desc').slice(2,8)
-              li
-                span.date
-                  != dateFormat(post.date, "MMM [<strong>]D[</strong>]")
-                h3
-                  a(href=post.permalink)= post.title
-                p= post.shortdesc
-      .4u
-        section
-          header
-            h2 What's this all about?
-          a.image.featured(href="#")
-            img(src= records.site.banner)
-          p= records.site.description
-    .row
-      .12u
-        #copyright
-          ul.links
-            li
-              | &copy; 
-              = records.site.name
-              |  All rights reserved.
-            li Design: 
-              a(href="http://html5up.net") HTML5 UP
+footer.footer
+  .container
+    .footer__heading We would love to help <span class="peach">market</span> your business, <span class="peach">see</span> your part of the world, and <span class="peach">meet</span> you!
+    .footer__subheading Please reach out to us today!
+    .footer__email
+      a(href="mailto:roaminglovetravel@gmail.com") roaminglovetravel@gmail.com

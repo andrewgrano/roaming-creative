@@ -1,0 +1,19 @@
+.rel {
+    position: relative;
+}
+
+.gold {
+    color: $gold;
+}
+
+.peach {
+    color: $peach;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-right: -2px;
+    margin-left: -2px;
+}
