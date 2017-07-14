@@ -5,6 +5,14 @@
     text-align: center;
     position: relative;
 
+    @media (max-width: $screen-sm-max) {
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 479px) {
+        padding-bottom: 60px;
+    }
+
     &__mtn {
         background: $blue-dark;
         margin-top: -1px;
@@ -24,11 +32,41 @@
         font-size: 36px;
         margin: 0 auto 35px;
         max-width: 660px;
+
+        @media (max-width: $screen-sm-max) {
+            font-size: 30px;
+            max-width: 550px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 25px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 479px) {
+            font-size: 22px;
+        }
     }
 
     &__subheading {
         font-size: 24px;
         margin-bottom: 75px;
+
+        @media (max-width: $screen-sm-max) {
+            font-size: 22px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 479px) {
+            font-size: 18px;
+        }
     }
 
     &__email {
@@ -38,6 +76,19 @@
             font-size: 36px;
             position: relative;
             padding: 15px 0 20px;
+
+            @media (max-width: $screen-sm-max) {
+                font-size: 30px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 25px;
+            }
+
+            @media (max-width: 479px) {
+                font-size: 22px;
+            }
+
 
             &:before {
                 content: " ";

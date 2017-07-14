@@ -17,3 +17,9 @@
     margin-right: -2px;
     margin-left: -2px;
 }
+
+.hidden-xxs {
+    @media (max-width: 479px) {
+        display: none;
+    }
+}
