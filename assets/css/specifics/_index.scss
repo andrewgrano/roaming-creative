@@ -335,7 +335,7 @@
             font-family: $displayFont;
             margin: 0 auto 70px;
             font-size: 20px;
-            letter-spacing: 1px;
+            letter-spacing: 0.01em;
             max-width: 830px;
             line-height: 1.6;
 
@@ -562,7 +562,15 @@
         background: $blue-dark;
         color: $white;
         text-align: center;
-        padding-bottom: 50px;
+        padding-bottom: 120px;
+
+        @media (max-width: $screen-sm-max) {
+            padding-bottom: 85px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            padding-bottom: 70px;
+        }
 
         .sectionHeader {
             margin-bottom: 55px;
@@ -630,6 +638,147 @@
     }
 
 
+    &Logos {
+        background: $blue-dark;
+        color: $white;
+        text-align: center;
+        padding-bottom: 100px;
+
+        @media (max-width: $screen-xs-max) {
+            padding-bottom: 75px;
+        }
+
+        .sectionHeader {
+            margin-bottom: 55px;
+
+            @media (max-width: $screen-sm-max) {
+                margin-bottom: 50px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .logo--renfair {
+            img {
+                margin-top: 90px;
+
+                @media (max-width: $screen-md-max) {
+                    margin-top: 85px;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    margin-top: 70px;
+                }
+
+
+                @media (max-width: $screen-xs-max) {
+                    margin-top: 0;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+
+        .logo--wb {
+            img {
+                margin-bottom: 75px;
+                height: 175px;
+
+                @media (max-width: $screen-md-max) {
+                    height: 160px;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    height: 130px;
+                }
+
+                @media (max-width: $screen-xs-max) {
+                    margin-bottom: 45px;
+                }
+            }
+        }
+
+        .logo--langham {
+            img {
+                margin-top: 90px;
+
+                @media (max-width: $screen-md-max) {
+                    margin-top: 85px;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    margin-top: 70px;
+                }
+
+                @media (max-width: $screen-xs-max) {
+                    margin-top: 0;
+                    margin-bottom: 55px;
+                }
+            }
+        }
+
+        .logo--laweekly {
+            img {
+                margin-top: 104px;
+
+                @media (max-width: $screen-md-max) {
+                    margin-top: 90px;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    margin-top: 70px;
+                }
+
+                @media (max-width: $screen-xs-max) {
+                    margin-top: 0;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        .logo--vagabond {
+            img {
+                height: 175px;
+
+                @media (max-width: $screen-md-max) {
+                    height: 160px;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    height: 130px;
+                }
+
+                @media (max-width: $screen-xs-max) {
+                    margin-bottom: 45px;
+                }
+
+            }
+        }
+
+        .logo--sagurao {
+            img {
+                margin-top: 104px;
+
+                @media (max-width: $screen-md-max) {
+                    margin-top: 90px;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    margin-top: 70px;
+                }
+
+
+                @media (max-width: $screen-xs-max) {
+                    margin-top: 0;
+                }
+
+            }
+        }
+
+    }
+
+
     &Videos {
         background: $blue-dark;
         color: $white;
@@ -648,7 +797,7 @@
             }
 
             @media (max-width: $screen-xs-max) {
-                margin-bottom: 40px;
+                margin-bottom: 20px;
             }
         }
 
