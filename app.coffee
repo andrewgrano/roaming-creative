@@ -22,7 +22,8 @@ module.exports =
 
   extensions: [
     records(
-      characters: { file: "data/characters.json" }
+      characters: { file: "data/characters.json" },
+      stats:  { file: "data/stats.json" },
       site: { file: "data/site.json" }
     ),
     collections(folder: 'posts', layout: 'post'),
