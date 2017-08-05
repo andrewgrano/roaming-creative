@@ -23,30 +23,35 @@ block content
 
         section.indexStats
             .container
-                .statbox
-                    .statbox__title Monthly Page Views
-                    hr
-                    .statbox__number 6,000
+                - each stat in records.stats.data
+                    .statbox
+                        .statbox__title= stat.name
+                        hr
+                        .statbox__number= stat.number
+                //- .statbox
+                //-     .statbox__title Monthly Page Views
+                //-     hr
+                //-     .statbox__number 6,000
 
-                .statbox
-                    .statbox__title Unique Visitors Per Month
-                    hr
-                    .statbox__number 2,000
+                //- .statbox
+                //-     .statbox__title Unique Visitors Per Month
+                //-     hr
+                //-     .statbox__number 2,000
 
-                .statbox
-                    .statbox__title Email Subscribers
-                    hr
-                    .statbox__number 950
+                //- .statbox
+                //-     .statbox__title Email Subscribers
+                //-     hr
+                //-     .statbox__number 950
 
-                .statbox
-                    .statbox__title Instagram Followers
-                    hr
-                    .statbox__number 1,400
+                //- .statbox
+                //-     .statbox__title Instagram Followers
+                //-     hr
+                //-     .statbox__number 1,400
 
-                .statbox
-                    .statbox__title Contributors / Articles
-                    hr
-                    .statbox__number 190 / 270
+                //- .statbox
+                //-     .statbox__title Contributors / Articles
+                //-     hr
+                //-     .statbox__number 190 / 270
 
         section.indexServices
             .container
