@@ -34,7 +34,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Image", name: "image", widget: "image", media_folder: "assets/img"}
               - {label: "Description", name: "description", widget: "string"}
       - name: "stats"
-        label: "stats"
+        label: "Stats"
         file: "data/stats.json"
         fields:
           - label: "stats"
@@ -43,3 +43,20 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Number", name: "number", widget: "string"}
+      - name: "services"
+        label: "Services Section"
+        file: "data/services.json"
+        fields:
+          - label: "Content"
+            name: "content"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Data", name: "data", widget: "string"}
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Image", name: "image", widget: "image", media_folder: "assets/img"}
+              - {label: "Description", name: "description", widget: "string"}
